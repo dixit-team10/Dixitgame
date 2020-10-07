@@ -1,22 +1,23 @@
 {
-  "name": "nodedixit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "name": "dixitbackend",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./bin/www",
+    "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dixit-team10/Dixitgame.git"
-  },
-  "author": "team10",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dixit-team10/Dixitgame/issues"
-  },
-  "homepage": "https://github.com/dixit-team10/Dixitgame#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.10.8",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1"
+  }
 }
