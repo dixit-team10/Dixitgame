@@ -1,0 +1,116 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/87/c0/b3/87c0b3d1e5b1d9e18afb008163f63fd6.jpg);
+
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+a {
+  color: #00b7ff;
+}
+li {
+  color: #00b7ff;
+}
+h1 {
+  color: #00b7ff;
+}
+
+.logo {
+  text-align: center;
+  color: aqua;
+  font-size: 200;
+}
+
+.playbutton {
+  align-self: center;
+  background-color: black;
+  color: wheat;
+  border-radius: 20%;
+  margin-top: 5%;
+  width: 40%;
+  height: 15%;
+
+  font-size: 40;
+}
+.bottombuttons {
+  color: wheat;
+  flex-direction: row;
+  margin-top: 8%;
+  width: 100%;
+  height: 15%;
+  font-size: 50;
+}
+.userbutton {
+  color: wheat;
+  background-color: black;
+  flex-direction: row;
+  height: 80;
+  width: 80;
+  border-radius: 100%;
+  margin-right: 20%;
+}
+
+.achievementsbutton {
+  color: wheat;
+  background-color: black;
+  flex-direction: row;
+  height: 80;
+  width: 80;
+  border-radius: 100%;
+}
+.optionsdiv {
+  color: wheat;
+  background-color: black;
+  height: 80%;
+  width: 70%;
+  margin-left: 13%;
+  margin-top: 5%;
+  padding-top: 3%;
+}
+
+.optionstext {
+  color: wheat;
+  font-size: 55;
+}
+.offlinebutton {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 20%;
+  margin-top: 5%;
+  width: 40%;
+  height: 15%;
+  font-size: 40;
+}
+.onlinebutton {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 20%;
+  margin-top: 5%;
+  width: 40%;
+  height: 15%;
+
+  font-size: 40;
+}
+.playerbutton {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 20%;
+  margin-top: 2.4%;
+  width: 30%;
+  height: 10%;
+
+  font-size: 40;
+}
+.regestrationdiv {
+  color: wheat;
+  background-color: black;
+  height: 70%;
+  width: 70%;
+  margin-left: 13%;
+  margin-top: 5%;
+  padding-top: 3%;
+}
