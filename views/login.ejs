@@ -1,13 +1,26 @@
-<h1>login</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup form</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body class="body">
+    <div class="regestrationdiv">
+      <text class="optionstext" > PLAYER LOGIN </text>
 
-<form action="/users/login" method="POST">
-  <input type="text" name="username" placeholder="username" />
-  <input type="password" name="password" placeholder="password" />
-  <button>login</button>
-</form>
+      <form class="playerinputs" style="padding: 50px 10px;" action="/users/login" method="POST">
+        <input class="inputfields" type="text" name="username" placeholder="username" />
+        <br />
+        <br />
 
-<h1>This is home page</h1>
+        <input  type="password" name="password" placeholder="password" />
+        <br />
+        <br />
+        <button style="border-radius: 10px; padding:10px 30px; font-size:20px;margin-top: 20px;">login</button>  
+      </form>
 
-<li><a href="/register">Sign up!!</a></li>
-<li><a href="/login">Login</a></li>
-<li><a href="/logout">Logout</a></li>
+      <a href="/users/signup" style="background-color:beige ;color:black;text-decoration: none; border-radius: 10px; padding:10px 20px; font-size:20px;"> Sign up</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULTS</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <br />
+    <div class="scoreboard">
+        <text class="details"> Scoreboard </text>
+        <br /><br /><br /><br /><br /><br />
+        <table>
+            <tr><th style="visibility: hidden;"></th><th>Player 1</th><th>Player 2</th><th>Player 3</th><th>Player 4</th><th>Player 5</th>
+            </tr>
+            <tr>
+                <th>Player Turn</th>
+                <% players.forEach((player)=>{ %>
+                <th><%- player.name %></th>
+                <% }) %>
+
+            </tr>
+            <br/>
+                <% players[0].score.forEach((score,index)=>{ %>
+                    <tr>
+                        <% if(playerturn == index){ %>
+
+                        <td class="turnrow"> <%- players[index].name %> </td>
+                        <% } else if(playerturn >= index){ %>
+                        <td > <%- players[index].name %> </td>
+
+                        <% } if(playerturn >= index){ 
+                        players.forEach((playerscore,i)=>{ 
+                            if(playerturn == i){ %>
+                            <td >
+                                <%- playerscore.score[index] %>
+                            </td>
+                        <% } else { %>
+                            <td>    
+                            <%- playerscore.score[index] %>
+                        </td>
+                        <% } }) %>
+                    </tr>
+                <% }}) %>
+                
+        </table>
+        <div class="nextbutton">
+        <% if(playerturn != 4){ %>
+       <a  href="/game/nextround">Next round</a>
+<% }else{ %>
+        <a class="final" href="/game/result">Result</a>
+<% } %>
+</div>
+       </div>
+</body>
+
+</html>
