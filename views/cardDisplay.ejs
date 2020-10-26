@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player turn</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div>
+        <text class="optionstext"> Your Selected Card</text>
+        <br />
+        <form method="POST" action="/game/choosecardturns">
+            <button class="card_check" style="margin: 50 20;" disabled><img src="/images/cards/<%- card %>.jpg" height="400px"
+                    /></button>
+                    <br/>
+            <textarea placeholder="Description" name="description" style="width: 80%;height: 100px;font-size: 220%;" required></textarea>
+            <br/>
+        <button type="submit" style="height: 60px; width: 100px;">ENTER</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Players Online</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body class="body">
+    <br />
+    <div class="regestrationdiv">
+      <br />
+
+      <text class="optionstext"> Enter Players Name </text>
+      <br />
+
+      <form action="/game/start" method="POST">
+        <div class="playerinputs">
+          <label>Player name 1: </label>
+          <input type="text" name="player1" placeholder="Enter player 1 name" required/>
+        </div>
+        <div class="playerinputs">
+          <label>Player name 2: </label>
+          <input type="text" name="player2" placeholder="Enter player 2 name" required/>
+        </div>
+        <div class="playerinputs">
+          <label>Player name 3: </label>
+          <input type="text" name="player3" placeholder="Enter player 3 name" required/>
+        </div>
+        <div class="playerinputs">
+          <label>Player name 4: </label>
+          <input type="text" name="player4" placeholder="Enter player 4 name" required/>
+        </div>
+        <div class="playerinputs">
+          <label>Player name 5: </label>
+          <input type="text" name="player5" placeholder="Enter player 5 name" required/>
+
+        </div>
+        <button type="submit" class="backdes">Continue</button>
+      </form>
+    </div>
+  </body>
+</html>
