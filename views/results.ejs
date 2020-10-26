@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULTS</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body class="body">
+    <br />
+    <div class="divlight">
+      <text class="darktext"> RESULTS </text>
+<br/>   <br/><br/>
+<% players.forEach((player,index) =>{ %>
+<div class="player">
+     <text class="resultext"> Player - <%- (index+1) %> - <%- player.name %></text>
+     <text class="score"><%- player.total %></text>
+     <% if(player.total == highest) { %> <text class="winner">Winner</text>
+   <% } %>
+</div>
+<% }) %>
+
+
+        <a class="backdes" href="\game\home">Play Again</a>
+      
+    </div>
+  </body>
+</html>

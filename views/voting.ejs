@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div>
+        <text class="optionstext">Voting has begun</text>
+        <br /><br /><br />   <text class="playerturn"> Player <%- player %> is voting </text>
+        <br /><br /><br /><br /><br />
+        <text class="details"> Choose the card which you think the Player <%- MP %> had </text>
+        <br /><br />
+        <br />
+        <h2 class="description">Player Cards</h2>
+        <br />
+
+        <% cards.forEach((card,index)=>{ %>
+        <form method="POST" action="/game/nextvoter" style="display: inline-block;">
+            <input value="<%- index %>" name="val" style="visibility: hidden; position: absolute;" />
+            <button class="card" style="margin: 50 20;"><img src="/images/cards/<%- card %>.jpg" height="400px"
+                    width="180px" /></button>
+
+            <br />
+        </form>
+        <% }) %>
+    </div>
+</body>
+
+</html>
