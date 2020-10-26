@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player turn</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div>
+        <text class="playerturn"> Player <%- player %> turn </text>
+        <br /><br /><br /><br /><br />
+        <text class="details"> On the basis of the given description, Select one of the card </text>
+        <br/>
+        <h1>Description:</h1>
+        <br/>
+        <h2 class="description"> <%- description %> </h2>
+        <br/>
+        
+<% cards.forEach((card,index)=>{ %>
+        <form method="POST" action="/game/nextplayer" style="display: inline-block;">
+    <input value="<%- index %>" name="val" style="visibility: hidden; position: absolute;" />
+            <button class="card" style="margin: 50 20;"><img src="/images/cards/<%- card.cardno %>.jpg" height="400px"
+                    width="180px" /></button>
+
+            <br />
+     </form>
+     <% }) %>
+    </div>
+</body>
+
+</html>
