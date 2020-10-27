@@ -1,6 +1,10 @@
 body {
-  background-image: url(https://i.pinimg.com/originals/87/c0/b3/87c0b3d1e5b1d9e18afb008163f63fd6.jpg);
-
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.397),
+      rgba(0, 0, 0, 0.11)
+    ),
+    url(https://i.pinimg.com/originals/87/c0/b3/87c0b3d1e5b1d9e18afb008163f63fd6.jpg);
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -13,24 +17,61 @@ li {
   color: #00b7ff;
 }
 h1 {
-  color: #00b7ff;
+  font-size: 270%;
+  color: #eee;
+  margin: 40 10;
 }
-
 .logo {
   text-align: center;
   color: aqua;
   font-size: 200;
+}
+textarea {
+  opacity: 0.8;
+  padding: 10px 30px;
+  margin: 0 10 20 10;
+  border-radius: 20px;
+}
+.card,
+.card_1 {
+  height: 450px;
+  width: 210px;
+  opacity: 0.7;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
+}
+.card_1 {
+  height: 450px;
+  width: auto;
+  opacity: 0.7;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
+}
+
+.card_1 {
+  opacity: 1;
+}
+.card:hover {
+  height: 480px;
+  width: 230px;
+  opacity: 1;
+  -webkit-box-shadow: 10px 10px 50px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 50px 6px rgba(0, 0, 0, 0.75);
 }
 
 .playbutton {
   align-self: center;
   background-color: black;
   color: wheat;
-  border-radius: 20%;
+  border-radius: 30px;
   margin-top: 5%;
   width: 40%;
   height: 15%;
-
   font-size: 40;
 }
 .bottombuttons {
@@ -59,15 +100,6 @@ h1 {
   width: 80;
   border-radius: 100%;
 }
-.optionsdiv {
-  color: wheat;
-  background-color: black;
-  height: 80%;
-  width: 70%;
-  margin-left: 13%;
-  margin-top: 5%;
-  padding-top: 3%;
-}
 
 .optionstext {
   color: wheat;
@@ -77,7 +109,7 @@ h1 {
   align-self: center;
   background-color: white;
   color: black;
-  border-radius: 20%;
+  border-radius: 30px;
   margin-top: 5%;
   width: 40%;
   height: 15%;
@@ -87,7 +119,7 @@ h1 {
   align-self: center;
   background-color: white;
   color: black;
-  border-radius: 20%;
+  border-radius: 30px;
   margin-top: 5%;
   width: 40%;
   height: 15%;
@@ -96,9 +128,9 @@ h1 {
 }
 .playerbutton {
   align-self: center;
-  background-color: white;
+  background-color: rgb(197, 197, 197);
   color: black;
-  border-radius: 20%;
+  border-radius: 30px;
   margin-top: 2.4%;
   width: 30%;
   height: 10%;
@@ -108,9 +140,223 @@ h1 {
 .regestrationdiv {
   color: wheat;
   background-color: black;
-  height: 70%;
+  height: 77%;
   width: 70%;
   margin-left: 13%;
   margin-top: 5%;
   padding-top: 3%;
+}
+.playerturn {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5;
+  font-size: 370%;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: bolder;
+  background-color: rgba(250, 235, 215, 0.212);
+}
+.details {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 4;
+
+  font-size: 270%;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: bolder;
+  background-color: rgba(250, 235, 215, 0.212);
+}
+
+.description {
+  padding: 50 10 !important;
+  margin: 0 10 20 10 !important;
+  border-radius: 150px;
+  color: #eee;
+  font-style: italic;
+  font-size: 210%;
+  background-color: rgba(43, 226, 171, 0.199);
+}
+
+.myform {
+  height: 60%;
+  width: 70%;
+  margin-left: 13%;
+  margin-top: 5%;
+  padding-top: 3%;
+}
+
+.smalltext {
+  color: wheat;
+  font-size: 30;
+}
+.achievementsbutton2 {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  margin-top: 1.4%;
+  width: 40%;
+  height: 12%;
+
+  font-size: 30;
+}
+.achievementsdiv {
+  color: wheat;
+  background-color: black;
+  height: 90%;
+  width: 60%;
+  margin-left: 13%;
+  padding-top: 1%;
+}
+.backach {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  width: 20%;
+  height: 15%;
+  font-size: 40;
+}
+.describetextarea {
+  background-color: white;
+  margin: 2%;
+  color: black;
+  width: 70%;
+  height: 10%;
+  font-size: 40;
+}
+.describecarddiv {
+  align-self: center;
+  background-color: white;
+  margin: 2%;
+  color: black;
+  width: 40%;
+  height: 50%;
+  font-size: 40;
+}
+.backdes {
+  text-decoration: none;
+  
+  padding: 15px;
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  font-size: 30;
+}
+.abs:hover{
+  background-color: white;
+}
+.playerinputs:first-child{
+  margin-top: 40px;
+}
+.playerinputs {
+margin: 20px 30px;
+}
+.playerinputs label, .lab{
+  font-size: 28px;
+}
+.playerinputs input, .inp{
+  background-color: rgb(255, 240, 221);
+  padding: 10px 10px;
+  margin-left:50px;
+  font-size: 20px;
+  width: 50%;
+  border-radius: 20px;
+}
+.divlight {
+  display: inline-block;
+  color: black;
+  width: 80%;
+  height: 500px;
+  padding: 60px;
+  background-color: #e2b16c;
+  
+}
+.darktext {
+  font-size: 40px;
+}
+.resultimg {
+  height: 10%;
+  width: 10%;
+  padding-top: 1%;
+}
+.resultext {
+  font-size: 43;
+  margin: 40px;
+}
+.score{
+  text-align: center;
+  font-size: 40px;
+  padding: 13px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  border-radius: 100%;
+
+}
+.player{
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgba(100, 237, 146, 0.219);
+}
+.winner{
+  float: right;
+  padding: 5px 30px; 
+  font-size: 40px;
+  color: bisque;
+  background-color: rgb(236, 126, 53);
+  border-radius: 50px;
+}
+.scoreboard table {
+  font-size: 180%;
+}
+.scoreboard table tr th {
+  background-color: rgb(219, 169, 103);
+  padding: 15px 40px;
+
+  border-radius: 40px;
+  width: 200px;
+  height: 30px;
+}
+
+.scoreboard table tr td {
+  background-color: rgb(212, 187, 154);
+  padding: 15px 40px;
+  margin-top: 10px;
+  border-radius: 40px;
+  width: 200px;
+  height: 30px;
+}
+.score_row td {
+  background-color: rgb(230, 187, 130) !important;
+}
+
+.resultextarea {
+  height: 10%;
+  width: 20%;
+  margin-left: 25%;
+}
+.turnrow {
+  background-color: rgba(55, 165, 69, 0.342) !important;
+}
+.nextbutton{
+  margin-top: 70px;
+  height: 50 !important;
+}
+.nextbutton a{
+  position: absolute;
+  top: 40;
+  right: 60;
+  padding-top: 50;
+  height: 70 !important;
+  width: 120 !important;
+  border-radius: 200%;
+  background-color: rgba(210, 105, 30, 0.363);
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18;
+}
+.nextbutton .final{
+  background-color: rgba(0, 255, 0, 0.274) !important ;
 }
