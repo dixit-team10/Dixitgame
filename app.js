@@ -6,6 +6,7 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var gameRouter = require("./routes/game");
 var passport = require("passport");
 
 var app = express();
@@ -16,7 +17,7 @@ const mongoose = require("mongoose");
 
 app.use(passport.initialize());
 
-const connect = mongoose.connect("mongodb://localhost:27017/dixitdb");
+const connect = mongoose.connect("mongodb+srv://dixit:dixit123@cluster0.9lzkt.mongodb.net/<dixitdb>?retryWrites=true&w=majority");
 
 connect.then(
   (db) => {
@@ -39,6 +40,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/game", gameRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
